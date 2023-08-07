@@ -3,11 +3,11 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
     return LaunchDescription([
-            Node(
-                package="demo_node_py",
-                executable='listener'
-                )
-                            ])
+        Node(
+            package='demo_nodes_py',
+            executable='listener'
+        )
+    ])
 
 
 #   <exec_depend>demo_nodes_cpp</exec_depend>
